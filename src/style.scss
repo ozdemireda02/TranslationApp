@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-page{
+    min-height: 100vh;
+    font-family: "Poppins";
+    background: #242424;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 80vw;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+ h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 30px;
+
+    @media (max-width:800){
+        font-size: 30px;
+        
+    }
+  }
+
+}
+
+.upper{
+    display: flex;
+    gap: 10px;
+    
+
+    .select{
+        flex: 1;
+    }
+}
+
+.middle{
+    display: flex;
+    gap: 105px;
+    margin-top: 20px;
+
+    @media (max-width:800px){
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div{
+        flex: 1;
+        &:last-child {
+            position: relative;
+            div{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+
+    textarea{
+        flex: 1;
+        width: 100%;
+        min-height: 300px;
+        max-height: 500px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        resize: none;
+        font-family: "Poppins";
+
+        &:disabled{
+          color: rgb(199, 191, 191);  
+        }
+    }
+    
+}
+
+.container button:last-child{
+    margin-top: 30px;
+}
+
+button{
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #1a1a1a;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: white;
+
+    &:hover{
+        border: 1px solid #646cff;
+    }
+}
+
+.center {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wave {
+    width: 6px;
+    height: 50px;
+    background: linear-gradient(45deg, cyan, #fff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+  }
+  
+  .wave:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .wave:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  .wave:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  .wave:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+  .wave:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  
+  .wave:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  
+  .wave:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+  
+  .wave:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+  
+  .wave:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0);
+    }
+  }
+  
